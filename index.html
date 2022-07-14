@@ -1,0 +1,64 @@
+<html lang="es" style="height: 100%;">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="icono.png">
+        <LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gooey Effect</title>
+    </head>
+    <body>
+        <div class="footer">
+            <div class="bubbles" id="bubbles">
+                <script>
+                    var bubbles = document.getElementById("bubbles")
+                        for (var i = 0; i < 150; i++) {
+                            bubbles.innerHTML +=`
+                            <div class="bubble" 
+                            style="--size:`+(Math.random() * 3+1.5)+`rem; 
+                            --distance:`+Math.random() * 8+`rem; 
+                            --position:`+Math.random() * 100+`%; 
+                            --time:`+(Math.random()*1+2) +`s; 
+                            --delay:`+Math.random() * -5+`s;">
+                            </div>`;
+                        }
+                </script>
+            <div class="cube"></div>
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <div class="icon1">
+                        <a href="https://github.com/victor291201" target="_blank">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V40H40V0H0ZM13.3333 31.6667H8.33333V13.3333H13.3333V31.6667ZM10.8333 11.22C9.22333 11.22 7.91667 9.90333 7.91667 8.28C7.91667 6.65667 9.22333 5.34 10.8333 5.34C12.4433 5.34 13.75 6.65667 13.75 8.28C13.75 9.90333 12.445 11.22 10.8333 11.22ZM33.3333 31.6667H28.3333V22.3267C28.3333 16.7133 21.6667 17.1383 21.6667 22.3267V31.6667H16.6667V13.3333H21.6667V16.275C23.995 11.965 33.3333 11.6467 33.3333 20.4017V31.6667Z" fill="#F1F1F1"/>
+                            </svg> 
+                        </a>
+                    </div>
+                    <div class="icon2">
+                        <a href="https://www.linkedin.com/in/victor-cervantes-anaya-35ab7a183/" target="_blank">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0C8.95667 0 0 8.955 0 20C0 28.8367 5.73 36.3333 13.6783 38.9783C14.6767 39.1633 15 38.5433 15 38.0167V34.2933C9.43667 35.5033 8.27833 31.9333 8.27833 31.9333C7.36833 29.6217 6.05667 29.0067 6.05667 29.0067C4.24167 27.765 6.195 27.7917 6.195 27.7917C8.20333 27.9317 9.26 29.8533 9.26 29.8533C11.0433 32.91 13.9383 32.0267 15.08 31.515C15.2583 30.2233 15.7767 29.34 16.35 28.8417C11.9083 28.3333 7.23833 26.6183 7.23833 18.9567C7.23833 16.7717 8.02 14.9883 9.29833 13.5883C9.09167 13.0833 8.40667 11.0483 9.49333 8.295C9.49333 8.295 11.1733 7.75833 14.995 10.345C16.59 9.90167 18.3 9.68 20 9.67167C21.7 9.68 23.4117 9.90167 25.01 10.345C28.8283 7.75833 30.505 8.295 30.505 8.295C31.5933 11.05 30.9083 13.085 30.7017 13.5883C31.985 14.9883 32.76 16.7733 32.76 18.9567C32.76 26.6383 28.0817 28.33 23.6283 28.825C24.345 29.445 25 30.6617 25 32.5283V38.0167C25 38.5483 25.32 39.1733 26.335 38.9767C34.2767 36.3283 40 28.8333 40 20C40 8.955 31.045 0 20 0Z" fill="#F1F1F1"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icon3">
+                        <a href="https://codepen.io/victor-cervantes" target="_blank">
+                            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 0L12.4375 0.375L0.4375 8.40625L0 8.6875V17.625L0.4375 17.9062L12.4375 25.9375L13 26.3125L13.5625 25.9375L25.5625 17.9062L26 17.625V8.6875L25.5625 8.40625L13.5625 0.375L13 0ZM12 3.0625V8.5L6.84375 11.9688L2.8125 9.25L12 3.0625ZM14 3.0625L23.1875 9.25L19.1562 11.9688L14 8.5V3.0625ZM13 10.25L17.3438 13.1562L13 16.0625L8.65625 13.1562L13 10.25ZM2 11.0938L5.0625 13.1562L2 15.2188V11.0938ZM24 11.0938V15.2188L20.9375 13.1562L24 11.0938ZM6.875 14.3438L12 17.8125V23.25L2.8125 17.0625L6.875 14.3438ZM19.125 14.3438L23.1875 17.0625L14 23.25V17.8125L19.125 14.3438Z" fill="#F1F1F1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg style="position:fixed; top:100%">
+        <defs>
+            <filter id="blob">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+            <feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
+            </filter>
+        </defs>
+        </svg>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(241, 241, 241);
+}
+body .footer {
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  --footer-background:#ED5565;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+  height: 50%;
+}
+.cube{
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top:125%;
+  filter: url("#blob");
+  background: var(--footer-background);
+}
+body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position);
+  background: var(--footer-background);
+  border-radius: 100%;
+  animation: bubble-size var(--time) ease-in infinite var(--delay), 
+  bubble-move var(--time) ease-in infinite var(--delay);
+  transform: translate(-50%, 100%);
+}
+body .footer .content {
+  height: 50%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background: var(--footer-background);
+}
+body .footer .content .icons{
+  width: 200px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+.icon1:hover,.icon2:hover,.icon3:hover{
+  opacity: 0.6;
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size);
+    height: var(--size);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-move {
+  0% {
+    bottom: -40px;
+  }
+  100% {
+    bottom: var(--distance);
+  }
+}
